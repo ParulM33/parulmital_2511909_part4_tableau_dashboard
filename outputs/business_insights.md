@@ -31,13 +31,13 @@
 31     
 32     Shipping delays vary across shipping modes.  
 33     Delayed deliveries can impact customer satisfaction.
-34     
-35     ## 7. Return Pattern
-36     
-37     Some categories or regions show higher return rates.  
-38     This may indicate product quality or customer expectation issues.
-39     
-40     ## 8. Business Opportunity
-41     
+    
+    ## 7. Return Pattern
+     
+    Some categories or regions show higher return rates.  
+    This may indicate product quality or customer expectation issues.
+    
+     ## 8. Business Opportunity
+     
 42     There is an opportunity to optimize discounts and improve profitability.  
 43     Also, improving delivery efficiency can enhance customer experience.
