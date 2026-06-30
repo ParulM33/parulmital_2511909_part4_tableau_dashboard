@@ -5,14 +5,11 @@
 ## Business Problem Summary
 
  
-
-In this assignment, the objective was to design an executive dashboard for retail leadership. 
-
-The goal was to monitor key business metrics such as sales performance, profitability, customer segments, category trends, discount impact, and shipping performance.
+The retail leadership team requires an executive dashboard that provides visibility into sales performance, profitability, customer behavior, shipping performance, discount effectiveness, and return patterns.
 
  
 
-The dashboard is intended to help leadership identify business opportunities, risks, and areas requiring attention.
+The objective of this project is to transform transactional sales data into an interactive Tableau dashboard that supports business decision-making, highlights risks and opportunities, and enables leadership to monitor key performance indicators.
 
  
 
@@ -53,12 +50,21 @@ The dataset was provided as `dashboard_sales_data.xlsx` and used directly in Tab
 ## Tableau Workbook Description
 
  
-
-The Tableau workbook `executive_dashboard.twbx` includes multiple sheets and one final executive dashboard.
+The Tableau workbook is saved as:
 
  
 
-The dashboard combines multiple views into a single interface for decision-making.
+tableau/executive_dashboard.twbx
+
+ 
+
+The workbook contains multiple worksheets and one executive dashboard designed for leadership reporting.
+
+ 
+
+The dashboard combines KPI monitoring, sales trends, regional performance, customer behavior, category profitability, return analysis, and shipping performance into a single executive view.
+
+ 
 
  
 
