@@ -96,11 +96,11 @@ The workbook provides:
 
  
 
-The following calculated fields were created during dashboard development:
+The following calculated fields were created in Tableau to support KPI calculations, operational analysis, and business insights.
 
  
 
-### Profit Margin
+### 1. Profit Margin
 
  
 
@@ -114,17 +114,21 @@ SUM([Profit]) / SUM([Sales])
 
 Purpose:
 
-Measures profitability as a percentage of sales.
+Calculates profitability as a percentage of sales and is used in KPI reporting and customer segment analysis.
 
  
 
-### Return Rate
+---
+
+ 
+
+### 2. Cost
 
  
 
 ```text
 
-Returned Orders / Total Orders
+[Sales] - [Profit]
 
 ```
 
@@ -132,29 +136,99 @@ Returned Orders / Total Orders
 
 Purpose:
 
-Measures return risk across product categories.
-
- 
-
-### Average Delivery Days
-
- 
-
-Used to compare delivery performance across shipping methods.
-
- 
-
-### Discount Impact Analysis Measures
-
- 
-
-Used to evaluate the relationship between discount levels and profitability.
+Estimates cost by subtracting profit from sales and supports profitability evaluation.
 
  
 
 ---
 
  
+
+### 3. Average Order Value
+
+ 
+
+```text
+
+SUM([Sales]) / COUNTD([Order ID])
+
+```
+
+ 
+
+Purpose:
+
+Measures the average revenue generated per order and helps evaluate customer purchasing behavior.
+
+ 
+
+---
+
+ 
+
+### 4. Return Rate
+
+ 
+
+```text
+
+SUM(
+
+IF [Order Status]="Returned"
+
+THEN 1
+
+ELSE 0
+
+END
+
+)
+
+/
+
+COUNT([Order ID])
+
+```
+
+ 
+
+Purpose:
+
+Measures the percentage of orders that were returned and supports return-risk analysis by category.
+
+ 
+
+---
+
+ 
+
+### 5. Shipping Delay Bucket
+
+ 
+
+```text
+
+IF [Shipping Delay Days] <= 2 THEN "0-2 Days"
+
+ 
+
+ELSEIF [Shipping Delay Days] <= 5 THEN "3-5 Days"
+
+ 
+
+ELSE "6+ Days"
+
+ 
+
+END
+
+```
+
+ 
+
+Purpose:
+
+Groups delivery performance into delay categories to support shipping and operational performance analysis.
 
 ## Dashboard Components
 
